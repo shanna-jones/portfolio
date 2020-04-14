@@ -10,648 +10,591 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-.container {
-    padding: 0 100px 0 100px;
-}
-
-nav ul,
-.main-info-section,
-.work-category {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-body {
-    background-color: #252627;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.navbar {
-    background-color: #181818;
-}
-
-header h1,
-header a,
-.text p,
-.about h1,
-.skills h1,
-.work h1,
-.contact h1 {
-    color: #707070;
-}
-
-header h1 {
-    padding-left: 30px;
-}
-
-li {
-    list-style: none;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-a {
-    text-decoration: none;
-    font-size: .9rem;
-    text-transform: uppercase;
-    position: relative;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-}
-
-.main-info-section {
-    height: calc(100vh - 81.6px);
-    margin-left: 70px;
-}
-
-.text {
-    margin-top: 120px;
-}
-
-.text h1 {
-    color: #fff;
-    font-size: 3rem;
-    cursor: context-menu;
-}
-
-.text span {
-    display: inline-block;
-}
-
-span:hover {
-    color: #48cfad;
-    transition: all .5s;
-}
-
-span.name {
-    color: #ed5565;
-}
-
-span.m-left {
-    margin-left: -10px;
-}
-
-.text p {
-    letter-spacing: 3px;
-    word-spacing: 10px;
-    font-size: .8rem;
-}
-
-.text a {
-    padding: 12px 25px;
-    background-color: none;
-    border: 3px solid #ed5565;
-    color: #ed5565;
-    font-size: .8rem;
-    letter-spacing: 2px;
-    position: relative;
-    top: 80px;
-    overflow: hidden;
-    transition: .5s;
-    display: inline-block;
-}
-
-.text a:hover {
-    color: #fff;
-}
-
-.text a::before {
-    content: ' ';
-    background-color: #ed5565;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0%;
-    z-index: -1;
-    transition: .5s;
-}
-
-.text a:hover::before {
-    height: 100%;
-}
-
-.profile-image img {
-    width: 400px;
-    margin-top: 50px;
-    float: right;
-    margin-right: 70px;
-}
-
-.category-designing img {
-    width: 1000px;
-    float: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.about {
-    height: 100vh;
-    margin-top: 100px;
-}
-
-.about h1,
-.work h1 {
-    font-size: 10rem;
-    z-index: 0;
-    opacity: .1;
-}
-
-.about-me-info {
-    max-width: 900px;
-    background-color: #252627;
-    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
-    padding: 50px;
-    position: relative;
-    top: -70px;
-    left: 50%;
-    right: 50;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.about-me-info p {
-    font-size: 1.3rem;
-    color: #BEBEBE;
-    z-index: 2;
-}
-
-.about-me-info p:nth-child(2),
-.about-me-info p:last-child {
-    margin-top: 30px;
-}
-
-.about img {
-    width: 300px;
-    position: relative;
-    top: -300px;
-    left: calc(100% - 100px);
-    right: calc(100% - 100px);
-    transform: translateX(calc(-100% + 100px));
-}
-
-
-/* end of about section */
-
-.skills {
-    height: 100vh;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.skills h1,
-.contact h1 {
-    text-align: right;
-    font-size: 10rem;
-    opacity: .1;
-}
-
-.skills h1 {
-    padding-top: 150px;
-}
-
-.skills-info {
-    font-size: 1.4rem;
-    color: #bebebe;
-    max-width: 800px;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.html {
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-// Responsive My Skills Box Widget
-// Made with ❤ by @Pawan_Mall
-// http://www.pawanmall.net 
-*/
-#SkillBox {
-    font-size: 20px;
-    font-family: 'Indie Flower', cursive;
-    width: 95%;
-    height: auto;
-    margin: 40px auto;
-    background-color: #fff;
-    //border: 1px solid #cdcdcd;
-    padding: 10px;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -moz-border-radius: 20px;
-}
-#SkillBox img {
-    width: 20%;
-    height: 10%;
-    margin: auto 35%;
-    padding: 10px;
-}
-.SkillBar {
-    width: 90%;
-    height: 50px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 20px auto;
-}
-#Skill-HTML {
-    width: 70%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
-    height: 50px;
-    position: absolute;
-    background-color: #ea8564;
-}
-@keyframes Animate-HTML {
-    from {
-        width: 10px;
+    .container {
+        padding: 0 100px 0 100px;
     }
-    to {
-        width: 70%
+    nav ul,
+    .main-info-section,
+    .work-category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-}
-@-webkit-keyframes Animate-HTML {
-    from {
-        width: 10px;
+    body {
+        background-color: #252627;
     }
-    to {
-        width: 70%
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
     }
-}
-@-moz-keyframes Animate-HTML {
-    from {
-        width: 10px;
+    .navbar {
+        background-color: #181818;
     }
-    to {
-        width: 70%
+    header h1,
+    header a,
+    .text p,
+    .about h1,
+    .skills h1,
+    .work h1,
+    .contact h1 {
+        color: #707070;
     }
-}
-@-o-keyframes Animate-HTML {
-    from {
-        width: 10px;
+    header h1 {
+        padding-left: 30px;
     }
-    to {
-        width: 70%
+    li {
+        list-style: none;
+        margin-left: 30px;
+        margin-right: 30px;
     }
-}
-#Skill-CSS {
-    animation: Animate-CSS 5s;
-    -webkit-animation: Animate-CSS 5s;
-    -moz-animation: Animate-CSS 5s;
-    -o-animation: Animate-CSS 5s;
-    width: 70%;
-    height: 50px;
-    position: absolute;
-    background-color: #55a69f;
-}
-@keyframes Animate-CSS {
-    from {
-        width: 10px;
+    a {
+        text-decoration: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        position: relative;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
     }
-    to {
-        width: 70%
+    .main-info-section {
+        height: calc(100vh - 81.6px);
+        margin-left: 70px;
     }
-}
-@-webkit-keyframes Animate-CSS {
-    from {
-        width: 10px;
+    .text {
+        margin-top: 120px;
     }
-    to {
-        width: 70%
+    .text h1 {
+        color: #fff;
+        font-size: 3rem;
+        cursor: context-menu;
     }
-}
-@-moz-keyframes Animate-CSS {
-    from {
-        width: 10px;
+    .text span {
+        display: inline-block;
     }
-    to {
-        width: 70%
+    span:hover {
+        color: #48cfad;
+        transition: all .5s;
     }
-}
-@-o-keyframes Animate-CSS {
-    from {
-        width: 10px;
+    span.name {
+        color: #ed5565;
     }
-    to {
-        width: 70%
+    span.m-left {
+        margin-left: -10px;
     }
-}
-#Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 25%;
-    height: 50px;
-    position: absolute;
-    background-color: #c44e45;
-}
-@keyframes Animate-JS {
-    from {
-        width: 10px;
+    .text p {
+        letter-spacing: 3px;
+        word-spacing: 10px;
+        font-size: .8rem;
     }
-    to {
-        width: 25%
+    .text a {
+        padding: 12px 25px;
+        background-color: none;
+        border: 3px solid #ed5565;
+        color: #ed5565;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        position: relative;
+        top: 80px;
+        overflow: hidden;
+        transition: .5s;
+        display: inline-block;
     }
-}
-@-webkit-keyframes Animate-JS {
-    from {
-        width: 10px;
+    .text a:hover {
+        color: #fff;
     }
-    to {
-        width: 25%
+    .text a::before {
+        content: ' ';
+        background-color: #ed5565;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        transition: .5s;
     }
-}
-@-moz-keyframes Animate-JS {
-    from {
-        width: 10px;
+    .text a:hover::before {
+        height: 100%;
     }
-    to {
-        width: 25%
+    .profile-image img {
+        width: 400px;
+        margin-top: 50px;
+        float: right;
+        margin-right: 70px;
     }
-}
-@-o-keyframes Animate-JS {
-    from {
-        width: 10px;
+    .category-designing img {
+        width: 1000px;
+        float: center;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    to {
-        width: 25%
+    .about {
+        height: 100vh;
+        margin-top: 100px;
     }
-}
-
-#Skill-JAVA {
-    animation: Animate-JAVA 4s;
-    -webkit-animation: Animate-JAVA 4s;
-    -moz-animation: Animate-JAVA 4s;
-    -o-animation: Animate-JAVA 4s;
-    width: 45%;
-    height: 50px;
-    position: absolute;
-    background-color: #8e930c;
-}
-@keyframes Animate-JAVA {
-    from {
-        width: 10px;
+    .about h1,
+    .work h1 {
+        font-size: 10rem;
+        z-index: 0;
+        opacity: .1;
     }
-    to {
-        width: 45%
+    .about-me-info {
+        max-width: 900px;
+        background-color: #252627;
+        box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
+        padding: 50px;
+        position: relative;
+        top: -70px;
+        left: 50%;
+        right: 50;
+        transform: translateX(-50%);
+        z-index: 1;
     }
-}
-@-webkit-keyframes Animate-JAVA {
-    from {
-        width: 10px;
+    .about-me-info p {
+        font-size: 1.3rem;
+        color: #BEBEBE;
+        z-index: 2;
     }
-    to {
-        width: 45%
+    .about-me-info p:nth-child(2),
+    .about-me-info p:last-child {
+        margin-top: 30px;
     }
-}
-@-moz-keyframes Animate-JAVA {
-    from {
-        width: 10px;
+    .about img {
+        width: 300px;
+        position: relative;
+        top: -300px;
+        left: calc(100% - 100px);
+        right: calc(100% - 100px);
+        transform: translateX(calc(-100% + 100px));
     }
-    to {
-        width: 45%
+    /* end of about section */
+    .skills {
+        height: 100vh;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-@-o-keyframes Animate-JAVA {
-    from {
-        width: 10px;
+    .skills h1,
+    .contact h1 {
+        text-align: right;
+        font-size: 10rem;
+        opacity: .1;
     }
-    to {
-        width: 45%
+    .skills h1 {
+        padding-top: 150px;
     }
-}
-#Skill-PHP {
-    animation: Animate-PHP 4s;
-    -webkit-animation: Animate-PHP 4s;
-    -moz-animation: Animate-PHP 4s;
-    -o-animation: Animate-PHP 4s;
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    background-color: #5A69A6;
-}
-@keyframes Animate-PHP {
-    from {
-        width: 10px;
+    .skills-info {
+        font-size: 1.4rem;
+        color: #bebebe;
+        max-width: 800px;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 50px;
     }
-    to {
-        width: 50%
+    #SkillBox {
+        font-size: 20px;
+        font-family: 'Indie Flower', cursive;
+        width: 95%;
+        height: auto;
+        margin: 40px auto;
+        background-color: #fff;
+        //border: 1px solid #cdcdcd;
+        padding: 10px;
+        border-radius: 20px;
+        -o-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -moz-border-radius: 20px;
     }
-}
-@-webkit-keyframes Animate-PHP {
-    from {
-        width: 10px;
+    #SkillBox img {
+        width: 20%;
+        height: 10%;
+        margin: auto 35%;
+        padding: 10px;
     }
-    to {
-        width: 50%
+    .SkillBar {
+        width: 90%;
+        height: 50px;
+        position: relative;
+        background: rgba(17, 17, 17, .3);
+        margin: 20px auto;
     }
-}
-@-moz-keyframes Animate-PHP {
-    from {
-        width: 10px;
+    #Skill-HTML {
+        width: 70%;
+        animation: Animate-HTML 4s;
+        -webkit-animation: Animate-HTML 4s;
+        -moz-animation: Animate-HTML 4s;
+        -o-animation: Animate-HTML 4s;
+        height: 50px;
+        position: absolute;
+        background-color: #ea8564;
     }
-    to {
-        width: 50%
+    @keyframes Animate-HTML {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-}
-@-o-keyframes Animate-PHP {
-    from {
-        width: 10px;
+    @-webkit-keyframes Animate-HTML {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-    to {
-        width: 50%
+    @-moz-keyframes Animate-HTML {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-}
-#Skill-SQL {
-    animation: Animate-SQL 4s;
-    -webkit-animation: Animate-SQL 4s;
-    -moz-animation: Animate-SQL 4s;
-    -o-animation: Animate-SQL 4s;
-    width: 80%;
-    height: 50px;
-    position: absolute;
-    background-color: #5A69A6;
-}
-@keyframes Animate-SQL {
-    from {
-        width: 10px;
+    @-o-keyframes Animate-HTML {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-    to {
-        width: 80%
+    #Skill-CSS {
+        animation: Animate-CSS 5s;
+        -webkit-animation: Animate-CSS 5s;
+        -moz-animation: Animate-CSS 5s;
+        -o-animation: Animate-CSS 5s;
+        width: 70%;
+        height: 50px;
+        position: absolute;
+        background-color: #55a69f;
     }
-}
-@-webkit-keyframes Animate-SQL {
-    from {
-        width: 10px;
+    @keyframes Animate-CSS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-    to {
-        width: 80%
+    @-webkit-keyframes Animate-CSS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-}
-@-moz-keyframes Animate-SQL {
-    from {
-        width: 10px;
+    @-moz-keyframes Animate-CSS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-    to {
-        width: 80%
+    @-o-keyframes Animate-CSS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 70%
+        }
     }
-}
-@-o-keyframes Animate-SQL {
-    from {
-        width: 10px;
+    #Skill-JS {
+        animation: Animate-JS 4s;
+        -webkit-animation: Animate-JS 4s;
+        -moz-animation: Animate-JS 4s;
+        -o-animation: Animate-JS 4s;
+        width: 25%;
+        height: 50px;
+        position: absolute;
+        background-color: #c44e45;
     }
-    to {
-        width: 80%
+    @keyframes Animate-JS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 25%
+        }
     }
-}
-.Skill-Area {
-    z-index: 1;
-    float: left;
-    //position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
-    text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-.PercentText {
-    z-index: 3;
-    position: relative;
-    padding-right: 15px;
-    margin-top: 15px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-
-
-/* end of skills bars */
-
-.work h1 {
-    text-align: left;
-    font-size: 10rem;
-    opacity: .1;
-    padding-bottom: 30px;
-}
-
-.work-category button {
-    text-transform: capitalize;
-    border: 3px solid #ed5565;
-    padding: 15px 30px;
-    border-radius: 50px;
-    color: #ed5565;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    background-color: #252627;
-    outline: none;
-    align-self: center;
-}
-
-div[class^='category-'] {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
-}
-
-
-/*.category-designing img {
+    @-webkit-keyframes Animate-JS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 25%
+        }
+    }
+    @-moz-keyframes Animate-JS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 25%
+        }
+    }
+    @-o-keyframes Animate-JS {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 25%
+        }
+    }
+    #Skill-JAVA {
+        animation: Animate-JAVA 4s;
+        -webkit-animation: Animate-JAVA 4s;
+        -moz-animation: Animate-JAVA 4s;
+        -o-animation: Animate-JAVA 4s;
+        width: 45%;
+        height: 50px;
+        position: absolute;
+        background-color: #8e930c;
+    }
+    @keyframes Animate-JAVA {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 45%
+        }
+    }
+    @-webkit-keyframes Animate-JAVA {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 45%
+        }
+    }
+    @-moz-keyframes Animate-JAVA {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 45%
+        }
+    }
+    @-o-keyframes Animate-JAVA {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 45%
+        }
+    }
+    #Skill-PHP {
+        animation: Animate-PHP 4s;
+        -webkit-animation: Animate-PHP 4s;
+        -moz-animation: Animate-PHP 4s;
+        -o-animation: Animate-PHP 4s;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        background-color: #5A69A6;
+    }
+    @keyframes Animate-PHP {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 50%
+        }
+    }
+    @-webkit-keyframes Animate-PHP {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 50%
+        }
+    }
+    @-moz-keyframes Animate-PHP {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 50%
+        }
+    }
+    @-o-keyframes Animate-PHP {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 50%
+        }
+    }
+    #Skill-SQL {
+        animation: Animate-SQL 4s;
+        -webkit-animation: Animate-SQL 4s;
+        -moz-animation: Animate-SQL 4s;
+        -o-animation: Animate-SQL 4s;
+        width: 80%;
+        height: 50px;
+        position: absolute;
+        background-color: #5A69A6;
+    }
+    @keyframes Animate-SQL {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 80%
+        }
+    }
+    @-webkit-keyframes Animate-SQL {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 80%
+        }
+    }
+    @-moz-keyframes Animate-SQL {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 80%
+        }
+    }
+    @-o-keyframes Animate-SQL {
+        from {
+            width: 10px;
+        }
+        to {
+            width: 80%
+        }
+    }
+    .Skill-Area {
+        z-index: 1;
+        float: left;
+        //position: absolute;
+        margin-top: 15px;
+        margin-left: 15px;
+        text-shadow: none;
+        color: #fff;
+        //font-family: Lato-Regular, sans-serif;
+        font-size: 18px;
+    }
+    .PercentText {
+        z-index: 3;
+        position: relative;
+        padding-right: 15px;
+        margin-top: 15px;
+        float: right;
+        text-shadow: none;
+        color: #fff;
+        //font-family: Lato-Regular, sans-serif;
+        font-size: 18px;
+    }
+    /* end of skills bars */
+    .work h1 {
+        text-align: left;
+        font-size: 10rem;
+        opacity: .1;
+        padding-bottom: 30px;
+    }
+    .work-category button {
+        text-transform: capitalize;
+        border: 3px solid #ed5565;
+        padding: 15px 30px;
+        border-radius: 50px;
+        color: #ed5565;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        background-color: #252627;
+        outline: none;
+        align-self: center;
+    }
+    div[class^='category-'] {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-gap: 20px;
+    }
+    /*.category-designing img {
     float: left;
     width: 210px;
     height: 157.50px;
     background-size: cover;
 } */
-
-.work a {
-    justify-self: center;
-    position: relative;
-    display: inline-block;
-}
-
-.work-category .active {
-    background-color: #ed5565;
-}
-
-button.active {
-    color: #fff;
-}
-
-.work a img {
-    width: 350px;
-    justify-self: center;
-}
-
-div.hideCategory {
-    display: none;
-}
-
-.showCategory {
-    display: block;
-}
-
-.contact {
-    margin-top: 50px;
-    display: block;
-    width: 500px;
-    padding: 20px;
-    background-color: #252627;
-    border-color: 3px solid #707070;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 20%;
-    right: 80%;
-    transform: translateX(-50%);
-}
-.container contact {
-    display: block;
-    width: 500px;
-    padding: 20px;
-    background-color: #252627;
-    border-color: 3px solid #707070;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
- 
-footer hr {
-    border: 2px solid #707070;
-    margin-top: 80px;
-}
-footer p {
-    text-align: center;
-    color: #707070;
-    font-size: 1.2rem;
-    padding: 30px 0;
-}
+    .work a {
+        justify-self: center;
+        position: relative;
+        display: inline-block;
+    }
+    .work-category .active {
+        background-color: #ed5565;
+    }
+    button.active {
+        color: #fff;
+    }
+    .work a img {
+        width: 350px;
+        justify-self: center;
+    }
+    div.hideCategory {
+        display: none;
+    }
+    .showCategory {
+        display: block;
+    }
+    .contact {
+        margin-top: 50px;
+        display: block;
+        width: 500px;
+        padding: 20px;
+        background-color: #252627;
+        border-color: 3px solid #707070;
+        margin: 20px 0;
+        outline: none;
+        font-size: 1.2rem;
+        color: #fff;
+        position: relative;
+        left: 20%;
+        right: 80%;
+        transform: translateX(-50%);
+    }
+    .container contact {
+        display: block;
+        width: 500px;
+        padding: 20px;
+        background-color: #252627;
+        border-color: 3px solid #707070;
+        margin: 20px 0;
+        outline: none;
+        font-size: 1.2rem;
+        color: #fff;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+    form input:last-child {
+        width: 150px;
+        background-color: #ed5565;
+        border: none;
+        cursor: pointer;
+    }
+    footer hr {
+        border: 2px solid #707070;
+        margin-top: 80px;
+    }
+    footer p {
+        text-align: center;
+        color: #707070;
+        font-size: 1.2rem;
+        padding: 30px 0;
+    }
 }
