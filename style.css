@@ -477,15 +477,15 @@ html {
         }
     }
     
-    #Skill-VBNET {
-    animation: Animate-VBNET 4s;
-    -webkit-animation: Animate-VBNET 4s;
-    -moz-animation: Animate-VBNET 4s;
-    -o-animation: Animate-VBNET 4s;
-    width: 35%;
-    height: 50px;
-    position: absolute;
-    background-color: #f8a51e;
+#Skill-VBNET {
+animation: Animate-VBNET 4s;
+-webkit-animation: Animate-VBNET 4s;
+-moz-animation: Animate-VBNET 4s;
+-o-animation: Animate-VBNET 4s;
+width: 35%;
+height: 50px;
+position: absolute;
+background-color: #f8a51e;
 }
 @keyframes Animate-VBNET {
     from {
@@ -510,7 +510,8 @@ to {
     width: 10px;
 }
 to {
-    width: 35%}
+    width: 35%
+        }
     }
     
     .Skill-Area {
